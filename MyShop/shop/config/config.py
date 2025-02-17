@@ -14,7 +14,9 @@ DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT")
 
 SECRECT_KEY = os.getenv("SECRET_KEY")
-db = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+#db = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+db = "sqlite:////media/databases/myshop.db"
 
 engine = create_engine(db, echo = False)
 
