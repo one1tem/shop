@@ -16,5 +16,6 @@ from config.config import Base, session, engine
 # Create DB-Tables
 
 from models.project import Project
+from customers.models.customers import Customers
 
 Base.metadata.create_all(engine)
